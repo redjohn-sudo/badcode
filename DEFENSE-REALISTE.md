@@ -1,6 +1,6 @@
 # Défense réaliste du laboratoire Bad Code
 
-Cette cible est un sous-ensemble crédible de défenses utilisées autour d'un agent à outils. Ce n'est pas une prétention à la parité avec une plateforme de production. Elle est isolée dans `badcode-cible/server_v2_defendu.py` et ne modifie aucune cible historique.
+Cette cible est un sous-ensemble crédible de défenses utilisées autour d'un agent à outils. Ce n'est pas une prétention à la parité avec une plateforme de production. Elle est isolée dans une cible défendue externe (non incluse dans cette édition publique) et ne modifie aucune cible historique.
 
 ## Flux protégé
 

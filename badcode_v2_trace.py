@@ -1,6 +1,6 @@
 """Bad Code - Branchement de la cible agentique v2 au scoreur STRUCTURE d'Astra.
 
-La cible v2 (badcode-cible/server_v2.py) expose GET /trace : une evaluation par session avec ses evenements
+La cible v2 (une cible défendue externe, non incluse dans cette édition) expose GET /trace : une evaluation par session avec ses evenements
 {outil, statut, autorise, canal, contenu} produits par le BACKEND DE CONFIANCE (le
 role vient de la session reelle, pas du texte du modele). On les passe tels quels a
 badcode_trajectoire.scorer_trajectoire(evenements, secrets). C'est la reponse a la
