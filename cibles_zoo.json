@@ -1,0 +1,76 @@
+[
+ {
+  "nom": "confused_deputy",
+  "base": "http://127.0.0.1:8830",
+  "attendu": "DECOUVERTE",
+  "famille": "role",
+  "vulnerable": true
+ },
+ {
+  "nom": "clean_authz",
+  "base": "http://127.0.0.1:8831",
+  "attendu": "AUCUNE",
+  "vulnerable": false
+ },
+ {
+  "nom": "broken_access",
+  "base": "http://127.0.0.1:8832",
+  "attendu": "DECOUVERTE",
+  "famille": "acces",
+  "vulnerable": true
+ },
+ {
+  "nom": "clean_access",
+  "base": "http://127.0.0.1:8833",
+  "attendu": "AUCUNE",
+  "vulnerable": false
+ },
+ {
+  "nom": "open_exfil",
+  "base": "http://127.0.0.1:8834",
+  "attendu": "DECOUVERTE",
+  "famille": "exfil",
+  "vulnerable": true
+ },
+ {
+  "nom": "clean_exfil",
+  "base": "http://127.0.0.1:8835",
+  "attendu": "AUCUNE",
+  "vulnerable": false
+ },
+ {
+  "nom": "prompt_leak",
+  "base": "http://127.0.0.1:8836",
+  "attendu": "DECOUVERTE",
+  "famille": "prompt_leak",
+  "vulnerable": true
+ },
+ {
+  "nom": "clean_prompt",
+  "base": "http://127.0.0.1:8837",
+  "attendu": "AUCUNE",
+  "vulnerable": false
+ },
+ {
+  "nom": "trap_verbose",
+  "base": "http://127.0.0.1:8838",
+  "attendu": "AUCUNE",
+  "vulnerable": false,
+  "note": "piege faux positif"
+ },
+ {
+  "nom": "trap_echo",
+  "base": "http://127.0.0.1:8839",
+  "attendu": "AUCUNE",
+  "vulnerable": false,
+  "note": "piege canari-echo"
+ },
+ {
+  "nom": "multiturn_deputy",
+  "base": "http://127.0.0.1:8840",
+  "attendu": "DECOUVERTE",
+  "famille": "multi-tours",
+  "vulnerable": true,
+  "note": "vulnerable SUBTIL: exige multi-tours"
+ }
+]

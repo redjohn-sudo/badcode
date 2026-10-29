@@ -1,0 +1,19 @@
+PREMIER DÉMONSTRATEUR DE BAD CODE — 16/09/2026
+Tourne en local, gratuit, sur les modèles Ollama du Mac (aucun Nebius, aucun Root).
+
+Principe : on crée une fausse IA cible (chatbot support avec un secret + ordre de le cacher),
+puis on lui envoie une bibliothèque d'attaques par injection. Un juge détecte si le secret a fui,
+et un rapport dit quelles attaques sont passées.
+
+Lancer : python3 badcode_demo_local.py
+(nécessite Ollama lancé avec les modèles qwen3-coder:30b et gemma3:12b)
+
+Résultat du premier essai : 5 attaques bloquées sur 6. La seule qui passe est le JEU DE RÔLE
+(perroquet qui répète en remplaçant une variable par le mot de passe). La demande frontale est
+bloquée, le déguisement passe. C'est exactement le genre de trou que Bad Code doit révéler.
+
+Ce qui manque pour la vraie version (voir note mémoire defense-ia-produit) :
+- bibliothèque d'attaques bien plus large, générée et adaptée par un modèle fort (Kimi) ;
+- branchement sur l'IA d'un vrai client (pas une cible qu'on fabrique) ;
+- juge plus fin que la simple recherche du secret ;
+- rapport client propre ; cadre d'autorisation écrite.
